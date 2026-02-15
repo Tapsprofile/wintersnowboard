@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinterSnowboard Theme - Demo Preview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="wp-content/themes/wintersnowboard/style.css">
+    <link rel="stylesheet" href="wp-content/themes/wintersnowboard/assets/css/custom.css">
+    <style>
+        /* Demo-specific styles */
+        .demo-note {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .demo-note strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+
+<div id="page" class="site">
+    <!-- DEMO NOTE -->
+    <div class="demo-note">
+        <strong>🎨 DEMO PREVIEW:</strong> This is a static HTML preview of the WinterSnowboard WordPress theme. 
+        In WordPress, this will be fully dynamic with real products and content.
+    </div>
+
+    <!-- Top Bar - Flashing Offers (Layer 1) -->
+    <div class="top-bar-offers">
+        <div class="container">
+            <div class="offer-text">
+                🔥 FLASH SALE! Up to 50% OFF on Winter Snowboards | Free Shipping on Orders Over $100 | Limited Time Only! 🔥
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Layer - Order Tracking & Messages -->
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-bar-content">
+                <div class="order-tracking">
+                    <i class="fas fa-truck icon"></i>
+                    <a href="#">Track Your Order</a>
+                </div>
+                <div class="customer-messages">
+                    <i class="fas fa-envelope icon"></i>
+                    <a href="#">Customer Support</a>
+                    <span> | </span>
+                    <i class="fas fa-phone icon"></i>
+                    <span>Call us: 1-800-SNOWBOARD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Layer - Main Header with Menu Toggle, Brand, Search, Icons -->
+    <header class="header-main">
+        <div class="container">
+            <div class="header-content">
+                <!-- Menu Toggle Button -->
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i> Menu
+                </button>
+
+                <!-- Brand Name -->
+                <a href="#" class="brand-name">WinterSnowboard</a>
+
+                <!-- Search Field -->
+                <div class="search-container">
+                    <input type="search" 
+                           class="search-field" 
+                           placeholder="Search for snowboards, gear, accessories...">
+                </div>
+
+                <!-- Header Icons - Favourites and Cart -->
+                <div class="header-icons">
+                    <!-- Favourites/Wishlist -->
+                    <a href="#" class="icon-link" title="Wishlist">
+                        <i class="far fa-heart"></i>
+                        <span class="fav-count">3</span>
+                    </a>
+
+                    <!-- Shopping Cart -->
+                    <a href="#" class="icon-link cart-link" title="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Menu (Collapsible) -->
+        <nav class="main-navigation" id="mainNavigation">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Snowboards</a></li>
+                    <li><a href="#">Gear</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="site-main">
+        <!-- Fourth Layer - All Categories Section -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="categories-header">All Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-snowboarding"></i></div>
+                        <div class="category-name">Snowboards</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <div class="category-name">Boots</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-link"></i></div>
+                        <div class="category-name">Bindings</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="category-name">Helmets</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-glasses"></i></div>
+                        <div class="category-name">Goggles</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+                        <div class="category-name">Apparel</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-box"></i></div>
+                        <div class="category-name">Accessories</div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon"><i class="fas fa-percentage"></i></div>
+                        <div class="category-name">Sale Items</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Showcase Section -->
+        <section class="products-showcase">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pro Rider Snowboard 2024</h3>
+                            <div class="product-price">$499.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="review-count">(15 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Freestyle Master Board</h3>
+                            <div class="product-price">$399.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span class="review-count">(12 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Powder King Snowboard</h3>
+                            <div class="product-price">$599.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="review-count">(20 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Beginner's Choice Board</h3>
+                            <div class="product-price">$299.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="review-count">(18 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">All-Mountain Explorer</h3>
+                            <div class="product-price">$449.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span class="review-count">(14 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Women's Pro Series</h3>
+                            <div class="product-price">$529.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="review-count">(22 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Youth Adventure Board</h3>
+                            <div class="product-price">$249.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="review-count">(16 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Carving Specialist Pro</h3>
+                            <div class="product-price">$699.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="review-count">(25 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Park & Pipe Master</h3>
+                            <div class="product-price">$479.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="review-count">(11 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-snowflake" style="font-size: 48px; color: white;"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Backcountry Explorer</h3>
+                            <div class="product-price">$799.99</div>
+                            <div class="product-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="review-count">(19 reviews)</span>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Reviews Section -->
+                <div class="reviews-section">
+                    <h2 class="reviews-header">Customer Reviews</h2>
+                    
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">John Smith</span>
+                            <span class="review-date">2 days ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Excellent quality snowboard! The design is fantastic and it performs great on the slopes. Highly recommended for intermediate to advanced riders.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Sarah Johnson</span>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Best purchase I've made this season. The board is lightweight yet sturdy, and the graphics are stunning. Customer service was also top-notch!</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Mike Davis</span>
+                            <span class="review-date">2 weeks ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="review-text">Great snowboard for the price. Good control and stability. Only minor issue is the bindings needed some adjustment, but overall very satisfied.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Emily Chen</span>
+                            <span class="review-date">3 weeks ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Amazing product! Fast shipping and well-packaged. The board exceeded my expectations. Perfect for carving and freestyle tricks.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">David Wilson</span>
+                            <span class="review-date">1 month ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Bought this for my son and he absolutely loves it. Great quality construction and the design is eye-catching. Would definitely buy again.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Lisa Anderson</span>
+                            <span class="review-date">1 month ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="review-text">Very good snowboard. Responsive and easy to control. The only reason for 4 stars is that I wish it came with a carrying case.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Tom Brown</span>
+                            <span class="review-date">1 month ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Outstanding performance in deep powder. The flex is perfect for my riding style. This is my third board from this brand and they never disappoint.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Jennifer Lee</span>
+                            <span class="review-date">2 months ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Incredible value for money! The board handles beautifully and looks amazing. My friends keep asking where I got it from.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Robert Taylor</span>
+                            <span class="review-date">2 months ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="review-text">Solid snowboard with good edge control. Took it on several runs and it performed consistently well. Minor cosmetic scratches appeared after a few uses.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Amanda White</span>
+                            <span class="review-date">2 months ago</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Perfect for beginners and intermediate riders! Very forgiving and stable. I've improved so much since getting this board. Highly recommend!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Column 1 - About -->
+                <div class="footer-section">
+                    <h3>About WinterSnowboard</h3>
+                    <p>Your premier destination for high-quality winter sports equipment. We offer the best snowboards, gear, and accessories for all skill levels.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Footer Column 2 - Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3 - Customer Service -->
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4 - Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Snow Street, Winter City, WC 12345</li>
+                        <li><i class="fas fa-phone"></i> 1-800-SNOWBOARD</li>
+                        <li><i class="fas fa-envelope"></i> info@wintersnowboard.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm EST</li>
+                    </ul>
+                    <h3 style="margin-top: 20px;">Newsletter</h3>
+                    <p>Subscribe to get special offers and updates!</p>
+                    <form class="newsletter-form" style="margin-top: 10px;">
+                        <input type="email" placeholder="Your email" style="padding: 10px; border: none; border-radius: 5px; width: 100%; margin-bottom: 10px;">
+                        <button type="submit" style="padding: 10px 20px; background-color: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WinterSnowboard. All rights reserved. | Designed with ❄️ for winter sports enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+</div><!-- #page -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="wp-content/themes/wintersnowboard/assets/js/main.js"></script>
+
+</body>
+</html>
