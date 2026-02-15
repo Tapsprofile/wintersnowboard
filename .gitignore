@@ -1,0 +1,91 @@
+# WinterSnowboard Theme .gitignore
+
+# WordPress core files
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/readme.html
+/license.txt
+
+# WordPress config
+wp-config.php
+wp-config-sample.php
+
+# Database
+*.sql
+*.sqlite
+
+# Uploads directory (keep structure, ignore contents)
+/wp-content/uploads/*
+!/wp-content/uploads/.gitkeep
+
+# Plugins (except theme-specific)
+/wp-content/plugins/*
+!/wp-content/plugins/.gitkeep
+
+# Themes (except wintersnowboard)
+/wp-content/themes/*
+!/wp-content/themes/wintersnowboard/
+!/wp-content/themes/.gitkeep
+
+# Cache and temp files
+/wp-content/cache/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/.htaccess
+/sitemap.xml
+/sitemap.xml.gz
+
+# Log files
+*.log
+error_log
+debug.log
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.settings/
+.buildpath
+
+# Node modules (if using build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build files
+/build/
+/dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Composer
+/vendor/
+composer.lock
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
